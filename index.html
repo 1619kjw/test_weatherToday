@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 날씨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="top">
+                <h1>오늘의 날씨</h1>
+                <a href="#" class="refreshBtn"><img src="./images/refresh_btn.png" alt="날씨새로고침하기"></a>
+            </div>
+            <div class="bottom">
+                <img class="icon" src="./images/icon_sunny.png" alt="날씨아이콘">
+                <div class="main">
+                    <div class="weatherWrap">
+                        <div class="info">
+                            <div class="main">
+                                <p class="region">Seoul</p>
+                                <p class="weather">맑음</p>
+                            </div>
+                            <div class="contents">
+                                <p class="tem">24℃</p>
+                                <p class="text">오늘 날씨는 맑습니다.<br>점심 식사 후에 가벼운 산책 어떠세요?<br>에너지를 얻을 수 있는 하루가 될거에요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnGroup">
+                        <a href="#">일상 기록하기</a>
+                        <a href="#">갤러리 둘러보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
